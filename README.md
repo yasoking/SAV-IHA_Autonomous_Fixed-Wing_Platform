@@ -1,75 +1,84 @@
-# Autonomous Fixed-Wing UAV Simulation & AI Detection System
+# Autonomous Fixed-Wing UAV – AI Detection & Competitive Simulation System
 
 ## Project Overview
-This project is a simulation and prototype development of an autonomous fixed-wing UAV system designed for AI-based detection, navigation, and competitive scoring behavior in a multi-agent environment.
+This project presents the design and development of an autonomous fixed-wing UAV platform with AI-based detection capabilities and a competitive multi-agent simulation framework.
 
-The system focuses on a drone that operates autonomously after initialization, performs QR-code-based mission activation, and engages in AI-driven detection of other drones within a simulated environment.
-
----
-
-## Core Concept
-- Fixed-wing UAV architecture for improved endurance and speed
-- Autonomous mission start via QR code recognition
-- AI-based object detection for identifying other drones
-- Competitive scoring system:
-  - Gain points when detecting other drones
-  - Lose points when being detected
-- Controller-based flight management system
+The airframe is built using a hybrid lightweight composite structure combining:
+- Carbon fiber tubes (primary load-bearing reinforcement)
+- Wooden internal structure with airfoil-shaped ribs
+- Foam skin for aerodynamic shaping and weight reduction
 
 ---
 
-## System Workflow
-1. **Initialization**
-   - UAV starts mission by reading a QR code
-   - QR code defines mission parameters
+## Airframe Design
+The structural concept follows a hybrid aerospace-inspired layout:
 
-2. **Autonomous Mode Activation**
-   - Drone transitions into autonomous flight mode
+### Load-Bearing Structure
+- Carbon fiber tubes integrated into the internal frame
+- Provides high stiffness-to-weight ratio
+- Acts as the main structural reinforcement for wing and fuselage
 
-3. **Navigation & Control**
-   - Flight controlled via ground controller interface
-   - Fixed-wing aerodynamic model used for efficiency
+### Internal Framework
+- Wooden ribs shaped according to airfoil geometry
+- Defines wing profile and structural integrity
 
-4. **AI Detection Module**
-   - Computer vision model detects nearby drones
-   - Detection events trigger scoring logic
-
-5. **Scoring System**
-   - +Points for detecting other drones
-   - -Points when detected by others
+### Outer Skin
+- Lightweight foam shell
+- Provides smooth aerodynamic surface
+- Reduces overall mass while maintaining shape fidelity
 
 ---
 
-## Design Rationale
-A fixed-wing configuration is selected instead of a multirotor platform due to:
-- Higher flight efficiency
-- Longer endurance
-- Higher cruise speed
-- Better suitability for continuous mission coverage
+## System Functionality
 
-Airframe design includes:
-- Customizable geometry
-- Adjustable airfoil profile
-- 3D-printed PETG structural components
+### 1. Mission Initialization
+- UAV activates via QR code scanning
+- QR code defines mission parameters and mode selection
+
+### 2. Autonomous Flight Mode
+- Transition to autonomous control after initialization
+- Ground controller used for supervision and override
+
+### 3. AI Detection System
+- Computer vision module detects other UAVs in the environment
+- Detection events are processed in real time
+
+### 4. Competitive Scoring Logic
+- +Points when detecting other drones
+- -Points when being detected by other drones
+- Encourages strategic positioning and stealth behavior
 
 ---
 
-## Technologies (conceptual)
-- Computer Vision (AI detection)
-- Embedded flight control system
-- UAV aerodynamics (fixed-wing modeling)
-- QR code recognition system
-- Ground control interface
+## Design Motivation
+A fixed-wing configuration was selected due to:
+- Higher aerodynamic efficiency
+- Extended flight endurance
+- Improved cruise speed compared to multirotor systems
+
+The hybrid structure enables:
+- High stiffness (carbon fiber)
+- Geometric flexibility (wood ribs)
+- Lightweight aerodynamic shaping (foam skin)
+
+---
+
+## Technologies (Conceptual)
+- Computer Vision / AI detection
+- Embedded UAV control systems
+- QR code mission initialization
+- Fixed-wing aerodynamics
+- Multi-agent simulation logic
 
 ---
 
 ## Applications
 - Autonomous UAV swarm simulation
-- Defense-style training environments (non-combat simulation)
 - AI-based aerial detection systems
-- Research in UAV autonomy and cooperative/competitive multi-agent systems
+- Research in cooperative and competitive UAV behavior
+- Lightweight composite UAV structural design studies
 
 ---
 
 ## Status
-Prototype / Research & Simulation Stage
+Research / Prototype / Simulation Stage
